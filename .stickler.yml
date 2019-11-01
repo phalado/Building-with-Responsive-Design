@@ -1,0 +1,6 @@
+linters:
+  csslint:
+    ignore: 'box-model,box-sizing,order-alphabetical,unique-headings'
+files:
+    ignore:
+        - 'css/reset.css'
