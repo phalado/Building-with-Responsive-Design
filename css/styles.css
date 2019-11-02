@@ -53,22 +53,37 @@ i {
 
   .cover article {
     display: flex;
-    height: 50%;
-    width: 33%;
-    /*margin: 10px 10px 0 10px;*/
+    height: calc(50% - 5px);
+    width: calc(33.33% - 5px);
   }
 
   .cover article:first-child {
     display: flex;
     height: 100%;
-    width: 66%;
-    /*margin: 10px 0 10px 10px;*/
+    width: calc(66.66% - 5px);
+    margin-right: 10px;
+  }
+
+  .cover article:last-child {
+    margin-top: 10px;
   }
 
   .cover-article {
     margin: 0;
     padding: 0;
     min-height: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 1600px) {
+  .cover {
+    height: 60vh;
   }
 }
 
