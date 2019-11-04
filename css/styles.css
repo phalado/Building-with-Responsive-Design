@@ -420,7 +420,7 @@ i {
     display: inline;
   }
 
-  .latest-funding a {
+  .latest-funding .header-container a {
     padding-right: 10px;
     border-right: 1px solid #f42;
     padding-left: 10px;
