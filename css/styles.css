@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+
 h2 {
   margin-bottom: 5px;
   font-size: 20px;
@@ -27,6 +31,74 @@ i {
   vertical-align: middle;
 }
 
+.top {
+  display: flex;
+  background-color: white;
+}
+
+.top-menu {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: flex-end;
+}
+
+.top-links, .navbar ul {
+  display: none;
+}
+
+.top-logo a {
+  box-sizing: border-box;
+  background-color: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  display: block;
+  height: 48px;
+  padding: 16px 20px;
+  width: 106px;
+}
+
+.top-logo img {
+  height: 16px;
+  width: 66px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search a {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: 48px;
+  color: inherit;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgb(238, 238, 238);
+}
+
+.search i {
+  font-size: 18px;
+  margin-left: 0;
+}
+
+.search .fa-search {
+  color: rgb(170, 170, 170);
+}
+
+.search .fa-search:hover {
+  color: rgb(100, 100, 100);
+}
+
+.search .fa-bars {
+  color: #f42;
+}
+
 .cover-article {
   display: flex;
   flex-direction: column;
@@ -41,7 +113,88 @@ i {
   font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
+.inside-cover-article {
+  padding: 0 12px 14px 12px;
+}
+
+.cover-article p, .cover-article p a {
+  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.uber-article {
+  background-image: linear-gradient(#0000, #000f), url("../images/uber-article.jpg")
+}
+
+.google-article {
+  background-image: linear-gradient(#0000, #000f), url("../images/google-article.jpg");
+}
+
+.crypto-article {
+  background-image: linear-gradient(#0000, #000f),  url("../images/crypto-article.jpg");
+}
+
 @media (min-width: 767px) {
+  .top-logo a {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .top-menu {
+    flex-direction: column;
+  }
+
+  .top-links, .navbar ul {
+    display: flex;
+  }
+
+  .top-links {
+    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+    justify-content: space-between;
+    color: hsla(0,0%,100%,.6);
+    background: #131313;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    max-height: 32px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .top-links li {
+    display: inline;
+    margin-left: 12px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    font-family: Shentox, sans-serif;
+    color: rgb(170, 170, 170);
+    flex-basis: 48px;
+  }
+
+  .navbar li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .navbar a {
+    color: inherit;
+  }
+
+  .navbar a:hover {
+    color: black;
+  }
+
+  .search a:last-child {
+    display: none;
+  }
+
   .cover {
     height: 60vh;
     display: flex;
@@ -86,27 +239,3 @@ i {
     height: 60vh;
   }
 }
-
-.inside-cover-article {
-  padding: 0 12px 14px 12px;
-}
-
-.cover-article p, .cover-article p a {
-  color: hsla(0,0%,100%,.6);
-  font-size: 12px;
-  line-height: 16px;
-
-}
-
-.uber-article {
-  background-image: linear-gradient(#0000, #000f), url("../images/uber-article.jpg")
-}
-
-.google-article {
-  background-image: linear-gradient(#0000, #000f), url("../images/google-article.jpg");
-}
-
-.crypto-article {
-  background-image: linear-gradient(#0000, #000f),  url("../images/crypto-article.jpg");
-}
-
