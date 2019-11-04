@@ -1,4 +1,5 @@
 body {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   background-color: rgb(238, 238, 238);
 }
 
@@ -158,7 +159,7 @@ i {
   background-image: linear-gradient(#0000, #000f),  url("../images/crypto-article.jpg");
 }
 
-.latest-news {
+.middle {
   margin: 0 20px;
   max-width: 1192px;
 }
@@ -220,6 +221,87 @@ i {
 
 .bitcointt-article {
   background-image: url("../images/bitcointt-article.jpg");
+}
+
+.latest-funding li {
+  padding-top: 14px;
+  font-size: 14px;
+}
+
+.latest-funding a {
+  color: #f42;
+}
+
+.latest-funding article {
+  box-sizing: border-box;
+  background: #fffaf8;
+  margin-top: 20px;
+}
+
+.latest-funding article:last-child {
+  display: none;
+}
+
+.latest-funding img {
+  float: left;
+  margin: 10px;
+}
+
+.latest-funding .funding {
+  background: rgba(255,68,34,.08);
+  padding: 10px;
+}
+
+.funding .amount {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.funding .funding-type {
+  font-family: Shentox,sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  padding-top: 5px;
+  color: black;
+  opacity: 0.5;
+}
+
+.latest-funding h6 {
+  font-size: 18px;
+  background-color: #f42;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.latest-funding h6 a {
+  color: white;
+}
+
+.latest-funding article ul {
+  padding: 15px;
+}
+.latest-funding li {
+  font-size: 13px;
+  color: #555;
+}
+
+.latest-funding i {
+  font-size: 18px;
+  color: black;
+  width: 20px;
+}
+
+.latest-funding .funding-info {
+  border-top: 1px solid rgba(255,68,34,.25);
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #555;
+}
+
+.latest-funding .on {
+  font-size: 12px;
+  color: #aaa;
 }
 
 
@@ -332,6 +414,35 @@ i {
     padding-top: 50%;
     margin-bottom: 8px;
   }
+
+  .latest-funding .header-container li {
+    font-size: 16px;
+    display: inline;
+  }
+
+  .latest-funding a {
+    padding-right: 10px;
+    border-right: 1px solid #f42;
+    padding-left: 10px;
+  }
+
+  .latest-funding li:first-child a {
+    padding-left: 0;
+  }
+
+  .latest-funding li:last-child a {
+    border-right: 0;
+  }
+
+  .latest-funding .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .latest-funding article {
+    flex-basis: calc(33% - 12px);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -344,11 +455,24 @@ i {
     height: 50%;
   }
 
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latest-funding article:last-child {
+    display: block;
+  }
+
+  .latest-funding article {
+    flex-basis: calc(25% - 18px);
+  }
 
 }
 
 @media (min-width: 1192px) {
-  .latest-news {
+  .middle {
     margin: 0 auto;
   }
 }
