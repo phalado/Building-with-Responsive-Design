@@ -3,6 +3,11 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
+.top {
+  position: sticky;
+  top: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
