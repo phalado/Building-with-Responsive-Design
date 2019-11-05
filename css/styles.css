@@ -430,7 +430,7 @@ i {
 .mn-list li {
   display: inline-flex;
   align-items: center;
-  border-bottom: 1px solid rgb(85, 85, 85);
+  border-bottom: 1px solid #EEE;
 }
 
 .mn-list li span {
@@ -452,7 +452,7 @@ i {
   width: 100%;
 }
 
-@media (min-width: 767px) {
+@media  (min-width: 767px) {
   .top-logo a {
     height: 80px;
     display: flex;
