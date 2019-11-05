@@ -12,7 +12,7 @@ Basic HTML5, CSS, github and Font Awesome v4.7.0 was everything we needed in thi
 
 ## Our project
 
-Our project can be found in https://github.com/phalado/Building-with-Responsive-Design, and a live view can be found [here](https://raw.githack.com/phalado/Building-with-Responsive-Design/main-code/index.html).
+Our project can be found in https://github.com/phalado/Building-with-Responsive-Design, and a live view can be found [here](https://rawcdn.githack.com/phalado/Building-with-Responsive-Design/26a3313ba5b83de484bffbec1c13712546d4278c/index.html).
 
 ## Contributors
 
