@@ -467,6 +467,10 @@ i {
   padding: 8px 0;
 }
 
+.latest-deals .ln-image {
+  background-position: 100% 0;
+}
+
 .latest-deals .deal-discount {
   display: none;
 }
@@ -494,7 +498,7 @@ i {
 }
 
 .latest-deals .deal3 {
-  background-image: url('../images/deal4.jpg');
+  background-image: url('../images/deal3.jpg');
 }
 
 .latest-deals .deal4 {
@@ -677,6 +681,10 @@ i {
     background-size: contain;
     top: 10px;
     right: 10px;
+  }
+
+  .latest-deals .ln-image {
+    background-position: 0 100%;
   }
 
   .deal-discount div {
