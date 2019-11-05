@@ -29,7 +29,7 @@ h3 {
   margin-top: 30px;
 }
 
-h4 a {
+h4 {
   color: black;
   font-size: 14px;
   font-weight: 700;
@@ -47,8 +47,17 @@ h5 {
   line-height: 1.5;
 }
 
+h6 {
+  font-size: 18px;
+  background-color: #f42;
+  font-weight: 700;
+  padding: 10px;
+  color: white;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 i {
@@ -178,7 +187,7 @@ i {
   margin-right: 13px;
 }
 
-.author, .author a {
+.author {
   color: #aaa;
   font-size: 12px;
   line-height: 18px;
@@ -225,9 +234,6 @@ i {
 .latest-funding li {
   padding-top: 14px;
   font-size: 14px;
-}
-
-.latest-funding a {
   color: #f42;
 }
 
@@ -265,17 +271,6 @@ i {
   opacity: 0.5;
 }
 
-.latest-funding h6 {
-  font-size: 18px;
-  background-color: #f42;
-  font-weight: 700;
-  padding: 10px;
-}
-
-.latest-funding h6 a {
-  color: white;
-}
-
 .latest-funding article ul {
   padding: 15px;
 }
@@ -304,22 +299,21 @@ i {
 }
 
 .mn-cover {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: relative;
   padding: 4px;
-  min-height: 30vh;
+  padding-top: 75%;
   background-size: cover;
   background-position: 50%;
-  height: 94vh;
   font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
 .inside-mn-cover {
   padding: 14px;
+  position: absolute;
+  bottom: 0;
 }
 
-.mn-cover p, .mn-cover p a {
+.mn-cover p {
   color: hsla(0,0%,100%,.6);
   font-size: 12px;
   line-height: 16px;
@@ -330,11 +324,35 @@ i {
 }
 
 .apps-cover {
-  background-image: linear-gradient(#0000, #000f), url("../images/facebook-article.png")
+  background-image: linear-gradient(#0000, #000f), url("../images/facebook-article.png");
 }
 
 .gear-cover {
-  background-image: linear-gradient(#0000, #000f), url("../images/homehub-article.png")
+  background-image: linear-gradient(#0000, #000f), url("../images/homehub-article.png");
+}
+
+.tech-cover {
+  background-image: linear-gradient(#0000, #000f), url("../images/malware-article.jpg");
+}
+
+.creative-cover {
+  background-image: linear-gradient(#0000, #000f), url("../images/arcade-article.jpg");
+}
+
+.podium-cover {
+  background-image: linear-gradient(#0000, #000f), url("../images/content-article.png");
+}
+
+.insights-cover {
+  background-image: linear-gradient(#0000, #000f), url("../images/power-article.jpg");
+}
+
+.launch-cover {
+  background-image: linear-gradient(#0000, #000f), url("../images/amazon-article.jpg");
+}
+
+.distract-cover {
+  background-image: linear-gradient(#0000, #000f), url("../images/wikipedia-article.jpg");
 }
 
 .mn-second {
@@ -373,12 +391,35 @@ i {
 }
 
 .netflix-article {
-  background-image: url("../images/netflix-article.jpg")
+  background-image: url("../images/netflix-article.jpg");
 }
 
 .apple-airpod-article {
-  background-image: url("../images/apple-airpods.png")
+  background-image: url("../images/apple-airpods.png");
+}
 
+.teacher-article {
+  background-image: url("../images/teacher-article.jpg");
+}
+
+.font-article {
+  background-image: url("../images/font-article.png");
+}
+
+.farm-article {
+  background-image: url("../images/farm-article.png");
+}
+
+.bittrex-article {
+  background-image: url("../images/bittrex-article.jpg");
+}
+
+.armenia-article {
+  background-image: url("../images/armenia-article.jpg");
+}
+
+.playstation-article {
+  background-image: url("../images/playstation-article.jpg");
 }
 
 .mn-list {
@@ -410,9 +451,6 @@ i {
   font-size: 14px;
   width: 100%;
 }
-
-
-
 
 @media (min-width: 767px) {
   .top-logo a {
@@ -459,10 +497,6 @@ i {
     display: flex;
     align-items: center;
     padding-left: 20px;
-  }
-
-  .navbar a {
-    color: inherit;
   }
 
   .navbar a:hover {
@@ -552,6 +586,18 @@ i {
   .latest-funding article {
     flex-basis: calc(33% - 12px);
   }
+
+  .more-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .mn-section {
+    width: calc(50% - 20px);
+    margin-bottom: 24px;
+    padding: 0 10px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -578,9 +624,12 @@ i {
     flex-basis: calc(25% - 18px);
   }
 
+  .mn-section {
+    width: calc(33.33% - 20px);
+  }
 }
 
-@media (min-width: 1192px) {
+@media (min-width: 1230px) {
   .middle {
     margin: 0 auto;
   }
