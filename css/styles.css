@@ -452,6 +452,10 @@ i {
   width: 100%;
 }
 
+.latest-deals {
+  margin-bottom: 60px;
+}
+
 .latest-deals .header-container {
   display: flex;
   justify-content: space-between;
@@ -478,6 +482,7 @@ i {
 .latest-deals .price {
   padding-top: 4px;
 }
+
 .latest-deals .old-price {
   text-decoration: line-through;
   font-size: 12px;
@@ -521,7 +526,75 @@ i {
   background-image: url('../images/deal8.jpg');
 }
 
-@media  (min-width: 767px) {
+.top-footer {
+  padding: 42px 0 28px;
+  background: #131313;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.footer-icons li {
+  margin: 0 8px;
+}
+
+.footer-icons a {
+  background: #333;
+  border-radius: 50%;
+  padding: 12px;
+  text-align: center;
+}
+
+.footer-icons a i {
+  margin: 0;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center
+}
+
+.footer-links li {
+  margin: 0 7px;
+}
+
+.footer-links li a {
+  color: #aaa;
+  font-family: Shentox,sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.bottom-footer {
+  background: black;
+  color: #aaa;
+  font-size: 13px;
+  padding: 32.5px 0;
+  text-align: center;
+}
+
+.bottom-footer p {
+  color: #aaa;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-size: 13px;
+  padding: 2.5px;
+}
+
+.bottom-footer img {
+  height: 9px;
+}
+
+.bottom-footer span {
+  color: #f42;
+}
+
+@media (min-width: 767px) {
   .top-logo a {
     height: 80px;
     display: flex;
@@ -697,6 +770,12 @@ i {
     text-transform: uppercase;
     top: 30px;
     width: 100%;
+  }
+
+  .bottom-footer {
+    display: flex;
+    justify-content: center;
+    padding: 39px 0;
   }
 }
 
