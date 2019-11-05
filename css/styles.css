@@ -6,6 +6,7 @@ body {
 .top {
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 main {
@@ -39,7 +40,6 @@ h4 {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 h5 {
@@ -147,7 +147,6 @@ i {
   background-size: cover;
   background-position: 50%;
   margin: 10px;
-  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
 .inside-cover-article {
@@ -155,6 +154,7 @@ i {
 }
 
 .cover-article p, .cover-article p a {
+  color: #fff;
   color: hsla(0,0%,100%,.6);
   font-size: 12px;
   line-height: 16px;
@@ -197,7 +197,6 @@ i {
   font-size: 12px;
   line-height: 18px;
   padding-top: 4px;
-  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 .author span {
@@ -258,6 +257,7 @@ i {
 }
 
 .latest-funding .funding {
+  background: rgb(255,68,34);
   background: rgba(255,68,34,.08);
   padding: 10px;
 }
@@ -297,6 +297,7 @@ i {
 }
 
 .latest-funding .funding-info {
+  border-top-color: rgb(255,68,34);
   border-top: 1px solid rgba(255,68,34,.25);
   padding: 15px;
   font-size: 12px;
@@ -315,7 +316,6 @@ i {
   padding-top: 75%;
   background-size: cover;
   background-position: 50%;
-  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
 .inside-mn-cover {
@@ -325,6 +325,7 @@ i {
 }
 
 .mn-cover p {
+  color: white;
   color: hsla(0,0%,100%,.6);
   font-size: 12px;
   line-height: 16px;
@@ -369,6 +370,7 @@ i {
 .mn-second {
   margin: 2px 0;
   height: 96px;
+  background-color: rgb(255,68,34);
   background-color: rgba(255,68,34,.06);
   color: #f42;
   font-size: 13px;
@@ -388,7 +390,6 @@ i {
 .mn-second a {
   color: #f42;
   text-decoration: none;
-  font-family:"ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   text-transform: none;
   font-size: 14px;
@@ -598,7 +599,6 @@ footer {
 
 .bottom-footer p {
   color: #aaa;
-  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
   font-size: 13px;
   padding: 2.5px;
 }
@@ -627,8 +627,8 @@ footer {
   }
 
   .top-links {
-    font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
     justify-content: space-between;
+    color: white;
     color: hsla(0,0%,100%,.6);
     background: #131313;
     font-size: 13px;
@@ -667,7 +667,7 @@ footer {
   }
 
   .cover {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -688,7 +688,7 @@ footer {
     margin-right: 10px;
   }
 
-  .cover article:first-child h2 {
+  .cover .article-first {
     font-size: 38px;
   }
 
@@ -806,7 +806,7 @@ footer {
   }
 
   .cover {
-    height: 50vh;
+    height: 75vh;
   }
 
   .cover article {
@@ -819,7 +819,6 @@ footer {
     background-size: cover;
     bottom: 0;
     left: 0;
-    mix-blend-mode: lighten;
     pointer-events: none;
     position: absolute;
     right: 0;
