@@ -4,14 +4,16 @@ body {
 }
 
 .top {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
+  width: 100%;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  margin-top: 48px;
 }
 
 h2 {
@@ -297,7 +299,7 @@ i {
 }
 
 .latest-funding .funding-info {
-  border-top-color: rgb(255,68,34);
+  border-top: 1px solid rgb(255,68,34);
   border-top: 1px solid rgba(255,68,34,.25);
   padding: 15px;
   font-size: 12px;
@@ -664,6 +666,10 @@ footer {
 
   .search a:last-child {
     display: none;
+  }
+
+  main {
+    margin-top: 80px;
   }
 
   .cover {
